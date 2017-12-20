@@ -1,0 +1,47 @@
+CREATE OR REPLACE FUNCTION insert_nulls()
+	RETURNS text AS $$
+DECLARE 
+	r TEXT DEFAULT '';
+	rec_ws   RECORD;
+	cur_ws CURSOR
+	FOR SELECT weather_station_id, max, min 
+	from measure_ranges
+	where weather_station_id = 329;
+	aux timestamp;
+BEGIN
+	OPEN cur_ws;
+	LOOP
+		FETCH cur_ws INTO rec_ws;
+		EXIT WHEN NOT FOUND;
+			if aux is not null then
+				aux = aux + interval '1' HOUR;
+			else
+				aux = rec_ws.min;
+			end if;
+			BEGIN
+				insert into measurements(weather_station_id
+										,parameter_id
+										,measure_date_complete 
+										,measure_date
+										,utc_hour
+										,value)
+							values(rec_ws.weather_station_id
+									,1
+									,aux + interval '1' hour 
+									,(aux + interval '1' hour)::date 
+									,(aux + interval '1' hour)::time
+									,null);
+				commit;
+
+			EXCEPTION WHEN unique_violation THEN 
+				-- Ignore duplicate inserts.
+			END;
+	END LOOP;
+	CLOSE cur_ws;
+	RETURN r;
+END; $$
+LANGUAGE plpgsql;
+
+DO $$ BEGIN
+    PERFORM insert_nulls();
+END $$;

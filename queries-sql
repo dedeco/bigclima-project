@@ -1,0 +1,22 @@
+create table measure_ranges as
+Select weather_station_id, max(measure_date_complete), min(measure_date_complete)
+from measurements
+group by weather_station_id;
+
+SELECT measure_date, parameter_id, count(*)
+	from measurements
+WHERE weather_station_id = 329
+  and parameter_id = 1 
+group by measure_date, parameter_id
+having count(*) < 24
+
+Select count(*)
+from measurements
+where parameter_id = 1 
+ and weather_station_id = 329
+ and value is null;
+
+code notes => verificar no GODADDY
+
+http://endofline.ws
+
