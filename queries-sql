@@ -20,3 +20,9 @@ code notes => verificar no GODADDY
 
 http://endofline.ws
 
+
+ Select date_trunc('day',mdth)
+from measurements
+where ptid = 3 
+ and wsid = 329
+ and mdth = '2011-01-30 18:00:00'

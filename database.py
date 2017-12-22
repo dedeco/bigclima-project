@@ -24,3 +24,4 @@ Parameter = Base.classes.parameters
 WeatherStation = Base.classes.weather_stations
 
 session = Session(engine, autoflush=AUTOFLUSH)
+
