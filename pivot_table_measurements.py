@@ -20,13 +20,11 @@ def main():
 			values = [(i.ptid,i.vlue) for i in m]
 			l = dict(values)
 
-			print (d)
-
 			mh = MeasurementHourly()
 			mh.wsid = r.wsid
 			mh.mdct = d
 			mh.msdt = d 
-			mh.uthr = '00:00:00'
+			mh.uthr = d.strftime("%H:%M:%S")
 			mh.prcp = l.get(1)
 			mh.stp = l.get(2)
 			mh.smax = l.get(3)
@@ -48,10 +46,12 @@ def main():
 			session.add(mh)
 
 			i += 1
-			session.commit()
+			if i > 1000:
+				print ('1000 records!')
+				session.commit()
+				i=0
 
-		if i ==1000:
-			break
+
 
 if __name__ == "__main__":
 	main()
