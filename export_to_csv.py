@@ -26,7 +26,7 @@ def export():
 			outcsv.writerow(header)		
 
 			for name, r in q.all():
-				outcsv.writerow([r.mdct,r.mdct,r.uthr,r.prcp,r.stp,r.smax,r.smin,r.gbrd,r.temp,r.tmax,r.tmin,r.dewp,r.dmax,r.dmin,r.hmdy,r.hmax,r.hmin,r.wdsp,r.wdct,r.gust])	
+				outcsv.writerow([r.mdct,r.msdt,r.uthr,r.prcp,r.stp,r.smax,r.smin,r.gbrd,r.temp,r.tmax,r.tmin,r.dewp,r.dmax,r.dmin,r.hmdy,r.hmax,r.hmin,r.wdsp,r.wdct,r.gust])	
 
 if __name__ == "__main__":
 	export()
