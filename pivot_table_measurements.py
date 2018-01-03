@@ -47,10 +47,11 @@ def main():
 
 			i += 1
 			if i > 1000:
-				print ('1000 records!')
+				print ('+ 1000 records commited!')
 				session.commit()
 				i=0
 
+		session.commit()
 
 
 if __name__ == "__main__":
