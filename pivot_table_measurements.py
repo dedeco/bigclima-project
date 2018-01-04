@@ -5,13 +5,17 @@ import pandas as pd
 import datetime
 
 def main():
-	q = session.query(MeasureRanges).filter(MeasureRanges.wsid==329)
+	#q = session.query(MeasureRanges).filter(MeasureRanges.wsid==329)
+	q = session.query(MeasureRanges).order_by(MeasureRanges.wsid) 
 
 	ranges = q.all()
 
 	i =0
 
 	for r in ranges:
+
+		print ('Pivoting WS %s' %r.wsid)
+
 		dates = pd.date_range(r.min,r.max, freq="H")
 
 		for d in dates:
@@ -46,8 +50,8 @@ def main():
 			session.add(mh)
 
 			i += 1
-			if i > 1000:
-				print ('+ 1000 records commited!')
+			if i > 10000:
+				print ('+ 10000 records commited!')
 				session.commit()
 				i=0
 
