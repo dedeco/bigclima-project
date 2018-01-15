@@ -6,7 +6,13 @@ import datetime
 import sqlalchemy
 
 def main():
-	q = session.query(MeasureRanges).filter(MeasureRanges.wsid>=32).order_by(MeasureRanges.wsid) 
+	q = session.query(MeasureRanges)
+	q = q.join(WeatherStation, MeasureRanges.wsid == WeatherStation.id)
+	q = q.join(City, WeatherStation.cities_id == City.id)
+	q = q.join(State, City.state_id == State.id)
+	q = q.filter(State.abbreviation.in_(['MG','SP','ES','RJ']))
+	#q = session.query(MeasureRanges).filter(MeasureRanges.wsid==170)	
+	#q = session.query(MeasureRanges).filter(MeasureRanges.wsid>32).order_by(MeasureRanges.wsid) 
 	#q = session.query(MeasureRanges).order_by(MeasureRanges.wsid) 
 
 	ranges = q.all()
@@ -17,24 +23,27 @@ def main():
 
 		print ('Pivoting WS %s' %r.wsid)
 
-		try:		
-			m = session.query(func.max(MeasurementHourly.mdct)).filter(MeasurementHourly.wsid==r.wsid).scalar()
+		m = session.query(func.max(MeasurementHourly.mdct)).filter(MeasurementHourly.wsid==r.wsid).scalar()
+		
+		if m:
 			print ('Exist min: %s' %m)			
-		except NoResultFound:
+			if m <= r.min:
+				m = r.min			
+		else:
 			m = r.min
-
-		if m < r.min:
-			m = r.min
-
-		dates = pd.date_range(r.min,r.max, freq="H")
+		
+		dates = pd.date_range(m,r.max, freq="H")
 
 		for d in dates:
 
 			try:
-				m = session.query(Measurement).filter(and_(Measurement.mdth==d,Measurement.wsid==r.wsid)).all()
+
+				ms = session.query(Measurement).filter(and_(Measurement.mdth==d,Measurement.wsid==r.wsid)).order_by(Measurement.mdth).all()
 				
-				values = [(i.ptid,i.vlue) for i in m]
+				values = [(i.ptid,i.vlue) for i in ms]
 				l = dict(values)
+
+				#print (d, l.get(6))
 
 				mh = MeasurementHourly()
 				mh.wsid = r.wsid
@@ -62,9 +71,9 @@ def main():
 				session.add(mh)
 
 				i += 1
-				if i > 10000:
-					print ('+ 10000 records commited!')
+				if i > 1000:
 					session.commit()
+					print ('+ 1000 records commited!')
 					i=0
 
 			except sqlalchemy.exc.IntegrityError:
