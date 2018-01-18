@@ -7,7 +7,7 @@ import csv
 
 def export():
 	
-	q = session.query(WeatherStation).filter_by(id=329)
+	q = session.query(WeatherStation).filter_by(id=1)
 
 	for ws in q.all():
 
