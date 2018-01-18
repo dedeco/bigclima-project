@@ -26,3 +26,30 @@ from measurements
 where ptid = 3 
  and wsid = 329
  and mdth = '2011-01-30 18:00:00'
+
+
+SELECT
+  CONCAT(STRING(INTEGER(lat + 90 * 10)), '-', STRING (INTEGER(lon + 180 *10))) AS bucket,
+  COUNT(*)
+FROM
+
+  [bigquery-public-data:noaa_gsod.stations] ws
+WHERE
+  ws.state IS NOT NULL
+  AND ws.country = 'US'
+GROUP BY  bucket, ws.state
+
+
+
+gmap = gmplot.GoogleMapPlotter(37, -104, 5)
+
+for w in ws:
+	gmap.heatmap(ws.latitude, ws.longitude, radius=ws.quant)
+
+gmap.draw("mymap.html")
+
+
+#standardSQL
+UPDATE clima.stations
+SET BUCKET =  CONCAT( CAST((CAST((lat + 90) AS FLOAT64) * 10) as STRING) , '-', CAST((CAST((lon + 180) AS FLOAT64) * 10) as STRING))
+WHERE TRUE 
