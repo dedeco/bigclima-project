@@ -5,7 +5,7 @@ from sqlalchemy.orm.exc import MultipleResultsFound, NoResultFound
 import string
 from decimal import Decimal
 
-ECHO = False
+ECHO = True
 AUTOFLUSH = False
 
 Base = automap_base()
