@@ -17,6 +17,9 @@ def main():
 
 	ranges = q.all()
 
+
+	return 
+
 	i =0
 
 	for r in ranges:
