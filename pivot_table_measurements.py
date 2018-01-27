@@ -7,16 +7,26 @@ import sqlalchemy
 
 def main():
 
-	sql =  "SELECT t.wsid \
+	sql =  "SELECT measure_ranges.wsid AS wsid \
 			FROM measure_ranges \
-			JOIN \
-			  (SELECT cast(wsid as int) as wsid \
-			         ,max(mdct) as m \
-			   FROM measurements_hourly \
-			   GROUP BY wsid) t ON (t.wsid = measure_ranges.wsid \
-			                        AND t.m < measure_ranges.max)"
+			JOIN weather_stations ON measure_ranges.wsid = weather_stations.id \
+			JOIN cities ON weather_stations.cities_id = cities.id \
+			JOIN states ON cities.state_id = states.id \
+			WHERE  measure_ranges.wsid NOT IN \
+				(SELECT measure_ranges.wsid AS wsid \
+				 FROM measure_ranges \
+				 JOIN weather_stations ON measure_ranges.wsid = weather_stations.id \
+				 JOIN cities ON weather_stations.cities_id = cities.id \
+				 JOIN states ON cities.state_id = states.id \
+				 JOIN \
+				   (SELECT cast(wsid AS int) AS wsid , \
+						   max(mdct) AS m \
+					FROM measurements_hourly \
+					GROUP BY wsid) t ON t.wsid = measure_ranges.wsid \
+				 WHERE states.abbreviation IN ('SP','MG','ES','RJ')) \
+				 ORDER BY measure_ranges.wsid" 
 
-	result = session.execute(sql)		                        
+	result = session.execute(sql)                               
 	
 	for r in result:
 
@@ -27,7 +37,7 @@ def main():
 	#q = q.filter(State.abbreviation.in_(['MG','SP','ES','RJ']))
 	#q = q.filter(MeasureRanges.wsid.notin_(sq))
 	
-		q = session.query(MeasureRanges).filter(MeasureRanges.wsid==r[0])	
+		q = session.query(MeasureRanges).filter(MeasureRanges.wsid==r[0])   
 		#q = session.query(MeasureRanges).filter(MeasureRanges.wsid>32).order_by(MeasureRanges.wsid) 
 		#q = session.query(MeasureRanges).order_by(MeasureRanges.wsid) 
 
@@ -42,9 +52,9 @@ def main():
 			m = session.query(func.max(MeasurementHourly.mdct)).filter(MeasurementHourly.wsid==r.wsid).scalar()
 			
 			if m:
-				print ('Exist min: %s' %m)			
+				print ('Exist min: %s' %m)          
 				if m <= r.min:
-					m = r.min			
+					m = r.min           
 			else:
 				m = r.min
 			

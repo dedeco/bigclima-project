@@ -1,0 +1,18 @@
+id,name,unit,description
+1,Precipitação,mm,Precipitação
+2,Pressão Atmosferica,hPa,Pressão Atmosferica
+3,Pressão Atmosférica Máxima,hPa,Pressão Atmosférica Máxima
+4,Pressão Atmosférica Mínima,hPa,Pressão Atmosférica Mínima
+5,Radiacao Global,KJ/M²,Radiacao Global
+6,Temperatura Do Ar,°C,Temperatura Do Ar
+7,Temperatura Do Ponto De Orvalho,°C,Temperatura Do Ponto De Orvalho
+8,Temperatura Máxima,°C,Temperatura Máxima
+9,Temperatura Máxima Do Ponto De Orvalho,°C,Temperatura Máxima Do Ponto De Orvalho
+10,Temperatura Mínima,°C,Temperatura Mínima
+11,Temperatura Mínima Do Ponto De Orvalho,°C,Temperatura Mínima Do Ponto De Orvalho
+12,Umidade Relativa Do Ar,%,Umidade Relativa Do Ar
+13,Umidade Relativa Maxima Do Ar,%,Umidade Relativa Maxima Do Ar
+14,Umidade Relativa Minima Do Ar,%,Umidade Relativa Minima Do Ar
+15,Vento Velocidade,m/s,Vento Velocidade
+16,"Vento, Direção",graus,"Vento, Direção"
+17,"Vento, Rajada Maxima",m/s,"Vento, Rajada Maxima"
