@@ -7,8 +7,11 @@ import csv
 def export():
 
 	q = session.query(WeatherStation)
+	q = q.join(City, WeatherStation.cities_id == City.id)
+	q = q.join(State, City.state_id == State.id)
+	q = q.filter(State.abbreviation.in_(['MG','SP','ES','RJ']))
 
-	file = './data/weather-station-brasil_only.csv'
+	file = './data/weather-station-brasil_sudeste.csv'
 
 
 	with open(file, 'w') as csvfile:
