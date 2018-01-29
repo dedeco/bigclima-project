@@ -46,6 +46,8 @@ def export():
 
 				print ('Find it: %f !' %_sum)
 
+				_sum = 0
+
 			start = None
 			i = 0
 
