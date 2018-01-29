@@ -17,3 +17,10 @@
 
 # Describe table
 # \d+ nome da tabela
+
+ALTER TABLE weather_stations RENAME latitude_dms TO lat_dms;
+ALTER TABLE weather_stations RENAME longitude_dms TO lon_dms;
+ALTER TABLE weather_stations RENAME latitude_dd TO lat;
+ALTER TABLE weather_stations RENAME longitude_dd TO lon;
+ALTER TABLE weather_stations ADD COLUMN elvt numeric(6,2);
+ALTER TABLE weather_stations ADD COLUMN inmet_code character varying(4);
