@@ -11,9 +11,19 @@ def export():
 
 	for ws in q.all():
 
-		q = session.query(WeatherStation,func.date_part('day',MeasurementHourly.msdt), MeasurementHourly)
+		q = session.query(WeatherStation \
+						,City.name \
+						,State.abbreviation \
+						,func.date_part('year',MeasurementHourly.msdt).label('yr') \
+						,func.date_part('month',MeasurementHourly.msdt).label('mo') \
+						,func.date_part('day',MeasurementHourly.msdt).label('da')\
+						,func.date_part('hour',MeasurementHourly.msct).label('hr') \
+						,MeasurementHourly)
 		q = q.join(MeasurementHourly, MeasurementHourly.wsid == WeatherStation.id)
-		q = q.filter(WeatherStation.id == ws.id)
+		q = q.join(City, WeatherStation.cities_id == City.id)
+		q = q.join(State, City.state_id == State.id)
+		q = q.filter(State.abbreviation.in_(['MG','SP','ES','RJ']))
+		q = q.filter(WeatherStation.id == ws.id)		
 		q = q.order_by(MeasurementHourly.mdct)
 
 		file = './data/' + slugify(ws.name) + '.csv'
@@ -23,9 +33,20 @@ def export():
 			outcsv = csv.writer(csvfile, delimiter=',',quotechar='"', quoting = csv.QUOTE_MINIMAL)
 			
 			header = [
-				'date_complete'\
+				 'wsid'\
+				,'wsnm'\
+				,'elvt'\
+				,'lat'\
+				,'lon'\
+				,'inme'\
+				,'city'\
+				,'prov'\
+				,'dtct'\
 				,'date'\
-				,'hour'\
+				,'yr'\
+				,'mo'\
+				,'da'\
+				,'hr'\
 				,'prcp'\
 				,'stp'\
 				,'smax'\
@@ -42,12 +63,44 @@ def export():
 				,'hmin'\
 				,'wdsp'\
 				,'wdct'\
-				,'gust'\
+				,'gust'
 				]
 			outcsv.writerow(header)		
 
-			for name, r in q.all():
-				outcsv.writerow([r.mdct,r.msdt,r.uthr,r.prcp,r.stp,r.smax,r.smin,r.gbrd,r.temp,r.tmax,r.tmin,r.dewp,r.dmax,r.dmin,r.hmdy,r.hmax,r.hmin,r.wdsp,r.wdct,r.gust])	
+			for ws,city,abrv,yr,mo,da,hr, m in q.all():
+				outcsv.writerow([
+					 ws.wsid\
+					,ws.name\
+					,ws.elvt\
+					,ws.lat\
+					,ws.lon\
+					,ws.inmet_code\
+					,city\
+					,abrv\
+					,m.dtct\
+					,m.date\
+					,yr\
+					,mo\
+					,da\
+					,hr\
+					,m.prcp\
+					,m.stp \
+					,m.smax\
+					,m.smin\
+					,m.gbrd\
+					,m.temp\
+					,m.tmax\
+					,m.tmin\
+					,m.dewp\
+					,m.dmax\
+					,m.dmin\
+					,m.hmdy\
+					,m.hmax\
+					,m.hmin\
+					,m.wdsp\
+					,m.wdct\
+					,m.gust\
+					])	
 
 if __name__ == "__main__":
 	export()
