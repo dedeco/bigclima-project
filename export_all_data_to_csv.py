@@ -11,7 +11,7 @@ def export():
 
 	for ws in q.all():
 
-		q = session.query(WeatherStation.name, MeasurementHourly)
+		q = session.query(WeatherStation,func.date_part('day',MeasurementHourly.msdt), MeasurementHourly)
 		q = q.join(MeasurementHourly, MeasurementHourly.wsid == WeatherStation.id)
 		q = q.filter(WeatherStation.id == ws.id)
 		q = q.order_by(MeasurementHourly.mdct)
@@ -22,7 +22,28 @@ def export():
 		with open(file, 'w') as csvfile:
 			outcsv = csv.writer(csvfile, delimiter=',',quotechar='"', quoting = csv.QUOTE_MINIMAL)
 			
-			header = ['date_complete','date','hour','prcp','stp','smax','smin','gbrd','temp','tmax','tmin','dewp','dmax','dmin','hmdy','hmax','hmin','wdsp','wdct','gust']
+			header = [
+				'date_complete'\
+				,'date'\
+				,'hour'\
+				,'prcp'\
+				,'stp'\
+				,'smax'\
+				,'smin'\
+				,'gbrd'\
+				,'temp'\
+				,'tmax'\
+				,'tmin'\
+				,'dewp'\
+				,'dmax'\
+				,'dmin'\
+				,'hmdy'\
+				,'hmax'\
+				,'hmin'\
+				,'wdsp'\
+				,'wdct'\
+				,'gust'\
+				]
 			outcsv.writerow(header)		
 
 			for name, r in q.all():
