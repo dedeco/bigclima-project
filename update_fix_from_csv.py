@@ -1,3 +1,5 @@
+
+from database import *
 import csv
 
 def update_fix():
@@ -6,13 +8,17 @@ def update_fix():
 
 	with open(file, 'r') as csvfile:
 		spamreader = csv.reader(csvfile, delimiter=',',quotechar='"')
-		for row in spamreader:
-			print (row)
-			#1cod
-			#2lat
-			#3lon
-			#4alt
-			#5id
+		for r in spamreader:
+
+			_id = int(r[5])
+			ws = session.query(WeatherStation).get(_id)
+			ws.inmet_code = r[1]
+			ws.lat= float(r[2])
+			ws.lon= float(r[3])
+			ws.elvt= float(r[4])
+
+			session.commit()
+
 
 if __name__ == "__main__":
 	update_fix()
