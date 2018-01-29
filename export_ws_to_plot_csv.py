@@ -18,7 +18,7 @@ def export():
 		#outcsv.writerow(header)		
 
 		for r in q.all():
-			if r.lat > 0.0 and r.lon > 0.0:
+			if r.lat != 0.0 and r.lon != 0.0:
 				outcsv.writerow([r.lon,r.lat])	
 
 if __name__ == "__main__":
