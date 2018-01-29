@@ -2,12 +2,14 @@
 
 from database import *
 from slugify import slugify
+from sqlalchemy import func
+from sqlalchemy.orm import aliased
 
 import csv
 
 def export():
 	
-	q = session.query(WeatherStation).filter_by(id=1)
+	q = session.query(WeatherStation).filter_by(id=329)
 
 	for ws in q.all():
 
@@ -17,7 +19,7 @@ def export():
 						,func.date_part('year',MeasurementHourly.msdt).label('yr') \
 						,func.date_part('month',MeasurementHourly.msdt).label('mo') \
 						,func.date_part('day',MeasurementHourly.msdt).label('da')\
-						,func.date_part('hour',MeasurementHourly.msct).label('hr') \
+						,func.date_part('hour',MeasurementHourly.mdct).label('hr') \
 						,MeasurementHourly)
 		q = q.join(MeasurementHourly, MeasurementHourly.wsid == WeatherStation.id)
 		q = q.join(City, WeatherStation.cities_id == City.id)
@@ -41,7 +43,7 @@ def export():
 				,'inme'\
 				,'city'\
 				,'prov'\
-				,'dtct'\
+				,'mdct'\
 				,'date'\
 				,'yr'\
 				,'mo'\
@@ -69,7 +71,7 @@ def export():
 
 			for ws,city,abrv,yr,mo,da,hr, m in q.all():
 				outcsv.writerow([
-					 ws.wsid\
+					 ws.id\
 					,ws.name\
 					,ws.elvt\
 					,ws.lat\
@@ -77,8 +79,8 @@ def export():
 					,ws.inmet_code\
 					,city\
 					,abrv\
-					,m.dtct\
-					,m.date\
+					,m.mdct\
+					,m.msdt\
 					,yr\
 					,mo\
 					,da\
