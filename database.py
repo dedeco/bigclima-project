@@ -23,6 +23,7 @@ MeasureRanges = Base.classes.measure_ranges
 Parameter = Base.classes.parameters
 WeatherStation = Base.classes.weather_stations
 Extreme = Base.classes.extreme_prcp
+Evolution = Base.classes.extreme_prcp_evo
 
 session = Session(engine, autoflush=AUTOFLUSH)
 
