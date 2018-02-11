@@ -19,22 +19,22 @@ def export():
 		q = q.filter(MeasurementHourly.wsid == ws.id)
 		q = q.order_by(MeasurementHourly.mdct)
 
-
-		print('Finding extreme for:%s' %ws.name)
-
 		data = q.all()
 
 		go =  True
 		start = end = 0
 		stop = len(data)
 
+		print('Finding extreme for:%s in %s records!' %(ws.name,str(stop)))
+
 		while(go):
 			
 			rain = False
 			while not (rain): # just when the rain starts
-				if not data[start][1]:
+				#print (start)
+				if start < stop and not data[start][1]:
 					start += 1
-				else:
+				else:					
 					break
 			
 			end = start + 24
@@ -61,6 +61,8 @@ def export():
 			start += 1
 			if (end>=stop):
 				break
+
+		#print('End of Finding extreme for:%s in %s records!' %(ws.name,str(stop)))
 				
 if __name__ == "__main__":
 	export()
