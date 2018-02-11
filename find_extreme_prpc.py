@@ -29,20 +29,23 @@ def export():
 		stop = len(data)
 
 		while(go):
-
+			
+			rain = False
+			while not (rain): # just when the rain starts
+				if not data[start][1]:
+					start += 1
+				else:
+					break
+			
 			end = start + 24
 			#print (start,end)
-			#_prcp = [x[1] for x in data[start:end]]
 			prcp = [x[1] for x in data[start:end] if x[1]]
 			#print (prcp)
-
 			t = sum(prcp)
-
 			if t > 50.0:
-
 				str_time = [x[0] for x in data[start:end]][0] 
 				end_time = [x[0] for x in data[start:end]][-1]
-				
+
 				e = Extreme()
 				e.wsid = ws.id
 				e.mdct_str = str_time
