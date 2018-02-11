@@ -6,54 +6,50 @@ import csv
 
 def export():
 
-	q = session.query(MeasurementHourly.wsid, MeasurementHourly.mdct, MeasurementHourly.prcp)
-	q = q.join(WeatherStation, MeasurementHourly.wsid == WeatherStation.id)
+	q = session.query(WeatherStation)
 	q = q.join(City, WeatherStation.cities_id == City.id)
 	q = q.join(State, City.state_id == State.id)
 	q = q.filter(State.abbreviation.in_(['MG','SP','ES','RJ']))
-	#q = q.filter(WeatherStation.id == 329)
-	q = q.order_by(MeasurementHourly.wsid, MeasurementHourly.mdct)
+	q = q.filter(WeatherStation.id == 329)
+	q = q.order_by(WeatherStation.wsid)
 
-	i =0
-	found = False
-	start = None
+	for ws in q.all():
 
-	for wsid, mdct, prcp  in q.all():
+		q = session.query(MeasurementHourly.mdct, MeasurementHourly.prcp)
+		q = q.filter(MeasurementHourly.wsid == ws.id)
+		q = q.order_by(MeasurementHourly.mdct)
 
-		if not start:
-			start = mdct
-			_sum = 0
+		data = q.all()
 
-		if prcp:
-			_sum += prcp
-		else:
-			if _sum ==0:
-				i=0
-				start = None
+		go =  True
+		start = end = 0
+		stop = len(data)
 
-		if i == 24:
+		while(go):
 
-			if _sum >= 50:
+			end = start + 24
+			#print (start,end)
+			prcp = [x[1] for x in data[start:end]]
+			t = sum(prcp)
 
+			if sum(prcp) > 50.0:
+
+				str_time = [x[0] for x in data[start:end]][0] 
+				end_time = [x[0] for x in data[start:end]][-1]
+				
 				e = Extreme()
-				e.wsid = wsid
-				e.mdct_str = start
-				e.mdct_end = mdct
-				e.prcp = _sum
+				e.wsid = ws.id
+				e.mdct_str = str_time
+				e.mdct_end = end_time
+				e.prcp = t
 
 				session.add(e)
 				session.commit()
 
-				print ('Find it: %f !' %_sum)
-
-				_sum = 0
-
-			start = None
-			i = 0
-
-		i+=1
-
-
+			start += 1
+			if (end>=stop):
+				break
+				
 if __name__ == "__main__":
 	export()
 
