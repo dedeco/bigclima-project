@@ -11,7 +11,7 @@ def export():
 	q = q.join(City, WeatherStation.cities_id == City.id)
 	q = q.join(State, City.state_id == State.id)
 	q = q.filter(State.abbreviation.in_(['MG','SP','ES','RJ']))
-	q = q.filter(WeatherStation.id == 329)
+	#q = q.filter(WeatherStation.id == 329)
 	q = q.order_by(MeasurementHourly.wsid, MeasurementHourly.mdct)
 
 	i =0
