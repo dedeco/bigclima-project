@@ -24,3 +24,9 @@ ALTER TABLE weather_stations RENAME latitude_dd TO lat;
 ALTER TABLE weather_stations RENAME longitude_dd TO lon;
 ALTER TABLE weather_stations ADD COLUMN elvt numeric(6,2);
 ALTER TABLE weather_stations ADD COLUMN inmet_code character varying(4);
+
+
+ALTER Table weather_stations ALTER COLUMN lat TYPE DECIMAL(9,6);
+ALTER Table weather_stations ALTER COLUMN lon TYPE DECIMAL(9,6);
+
+ALTER TABLE extreme_prcp ADD COLUMN prcp numeric;
