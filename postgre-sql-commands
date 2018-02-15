@@ -31,3 +31,12 @@ ALTER Table weather_stations ALTER COLUMN lon TYPE DECIMAL(9,6);
 
 ALTER TABLE extreme_prcp ADD COLUMN prcp numeric;
 truncate table extreme_prcp_evo restart identity;
+
+
+[
+'> =00 mm < 25 mm',
+'>= 25 mm < 50 mm',
+'>= 50 mm < 75 mm',
+'>= 75 mm < 100 mm',
+'>= 100',
+]
