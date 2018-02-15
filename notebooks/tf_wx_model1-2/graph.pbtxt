@@ -539,14 +539,6 @@ node {
         type: DT_DOUBLE
         type: DT_DOUBLE
         type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
       }
     }
   }
@@ -578,22 +570,6 @@ node {
     key: "shapes"
     value {
       list {
-        shape {
-        }
-        shape {
-        }
-        shape {
-        }
-        shape {
-        }
-        shape {
-        }
-        shape {
-        }
-        shape {
-        }
-        shape {
-        }
         shape {
         }
         shape {
@@ -3457,238 +3433,6 @@ node {
   }
 }
 node {
-  name: "enqueue_input/Placeholder_92"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
-  name: "enqueue_input/Placeholder_93"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
-  name: "enqueue_input/Placeholder_94"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
-  name: "enqueue_input/Placeholder_95"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
-  name: "enqueue_input/Placeholder_96"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
-  name: "enqueue_input/Placeholder_97"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
-  name: "enqueue_input/Placeholder_98"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
-  name: "enqueue_input/Placeholder_99"
-  op: "Placeholder"
-  device: "/device:CPU:0"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          unknown_rank: true
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "shape"
-    value {
-      shape {
-        unknown_rank: true
-      }
-    }
-  }
-}
-node {
   name: "enqueue_input/random_shuffle_queue_EnqueueMany"
   op: "QueueEnqueueManyV2"
   input: "enqueue_input/random_shuffle_queue"
@@ -3784,28 +3528,12 @@ node {
   input: "enqueue_input/Placeholder_89"
   input: "enqueue_input/Placeholder_90"
   input: "enqueue_input/Placeholder_91"
-  input: "enqueue_input/Placeholder_92"
-  input: "enqueue_input/Placeholder_93"
-  input: "enqueue_input/Placeholder_94"
-  input: "enqueue_input/Placeholder_95"
-  input: "enqueue_input/Placeholder_96"
-  input: "enqueue_input/Placeholder_97"
-  input: "enqueue_input/Placeholder_98"
-  input: "enqueue_input/Placeholder_99"
   device: "/device:CPU:0"
   attr {
     key: "Tcomponents"
     value {
       list {
         type: DT_INT64
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
         type: DT_DOUBLE
         type: DT_DOUBLE
         type: DT_DOUBLE
@@ -4686,46 +4414,6 @@ node {
             size: 400
           }
         }
-        shape {
-          dim {
-            size: 400
-          }
-        }
-        shape {
-          dim {
-            size: 400
-          }
-        }
-        shape {
-          dim {
-            size: 400
-          }
-        }
-        shape {
-          dim {
-            size: 400
-          }
-        }
-        shape {
-          dim {
-            size: 400
-          }
-        }
-        shape {
-          dim {
-            size: 400
-          }
-        }
-        shape {
-          dim {
-            size: 400
-          }
-        }
-        shape {
-          dim {
-            size: 400
-          }
-        }
       }
     }
   }
@@ -4734,14 +4422,6 @@ node {
     value {
       list {
         type: DT_INT64
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
-        type: DT_DOUBLE
         type: DT_DOUBLE
         type: DT_DOUBLE
         type: DT_DOUBLE
@@ -4877,7 +4557,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dewp/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:10"
+  input: "random_shuffle_queue_DequeueMany:7"
   input: "dnn/input_from_feature_columns/input_layer/dewp/ExpandDims/dim"
   attr {
     key: "T"
@@ -5280,7 +4960,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dewp_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:54"
+  input: "random_shuffle_queue_DequeueMany:46"
   input: "dnn/input_from_feature_columns/input_layer/dewp_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -5683,7 +5363,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dewp_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:55"
+  input: "random_shuffle_queue_DequeueMany:47"
   input: "dnn/input_from_feature_columns/input_layer/dewp_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -6086,7 +5766,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dewp_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:56"
+  input: "random_shuffle_queue_DequeueMany:48"
   input: "dnn/input_from_feature_columns/input_layer/dewp_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -6489,7 +6169,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dewp_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:57"
+  input: "random_shuffle_queue_DequeueMany:49"
   input: "dnn/input_from_feature_columns/input_layer/dewp_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -6892,7 +6572,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dewp_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:58"
+  input: "random_shuffle_queue_DequeueMany:50"
   input: "dnn/input_from_feature_columns/input_layer/dewp_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -7295,7 +6975,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmax/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:11"
+  input: "random_shuffle_queue_DequeueMany:8"
   input: "dnn/input_from_feature_columns/input_layer/dmax/ExpandDims/dim"
   attr {
     key: "T"
@@ -7698,7 +7378,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmax_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:59"
+  input: "random_shuffle_queue_DequeueMany:51"
   input: "dnn/input_from_feature_columns/input_layer/dmax_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -8101,7 +7781,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmax_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:60"
+  input: "random_shuffle_queue_DequeueMany:52"
   input: "dnn/input_from_feature_columns/input_layer/dmax_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -8504,7 +8184,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmax_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:61"
+  input: "random_shuffle_queue_DequeueMany:53"
   input: "dnn/input_from_feature_columns/input_layer/dmax_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -8907,7 +8587,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmax_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:62"
+  input: "random_shuffle_queue_DequeueMany:54"
   input: "dnn/input_from_feature_columns/input_layer/dmax_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -9310,7 +8990,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmax_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:63"
+  input: "random_shuffle_queue_DequeueMany:55"
   input: "dnn/input_from_feature_columns/input_layer/dmax_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -9713,7 +9393,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmin/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:12"
+  input: "random_shuffle_queue_DequeueMany:9"
   input: "dnn/input_from_feature_columns/input_layer/dmin/ExpandDims/dim"
   attr {
     key: "T"
@@ -10116,7 +9796,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmin_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:64"
+  input: "random_shuffle_queue_DequeueMany:56"
   input: "dnn/input_from_feature_columns/input_layer/dmin_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -10519,7 +10199,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmin_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:65"
+  input: "random_shuffle_queue_DequeueMany:57"
   input: "dnn/input_from_feature_columns/input_layer/dmin_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -10922,7 +10602,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmin_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:66"
+  input: "random_shuffle_queue_DequeueMany:58"
   input: "dnn/input_from_feature_columns/input_layer/dmin_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -11325,7 +11005,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmin_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:67"
+  input: "random_shuffle_queue_DequeueMany:59"
   input: "dnn/input_from_feature_columns/input_layer/dmin_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -11728,7 +11408,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/dmin_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:68"
+  input: "random_shuffle_queue_DequeueMany:60"
   input: "dnn/input_from_feature_columns/input_layer/dmin_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -12098,409 +11778,6 @@ node {
   }
 }
 node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:1"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/elvt/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
   name: "dnn/input_from_feature_columns/input_layer/gust/ExpandDims/dim"
   op: "Const"
   input: "^add"
@@ -12534,7 +11811,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/gust/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:18"
+  input: "random_shuffle_queue_DequeueMany:15"
   input: "dnn/input_from_feature_columns/input_layer/gust/ExpandDims/dim"
   attr {
     key: "T"
@@ -12937,7 +12214,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/gust_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:94"
+  input: "random_shuffle_queue_DequeueMany:86"
   input: "dnn/input_from_feature_columns/input_layer/gust_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -13340,7 +12617,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/gust_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:95"
+  input: "random_shuffle_queue_DequeueMany:87"
   input: "dnn/input_from_feature_columns/input_layer/gust_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -13743,7 +13020,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/gust_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:96"
+  input: "random_shuffle_queue_DequeueMany:88"
   input: "dnn/input_from_feature_columns/input_layer/gust_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -14146,7 +13423,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/gust_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:97"
+  input: "random_shuffle_queue_DequeueMany:89"
   input: "dnn/input_from_feature_columns/input_layer/gust_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -14549,7 +13826,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/gust_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:98"
+  input: "random_shuffle_queue_DequeueMany:90"
   input: "dnn/input_from_feature_columns/input_layer/gust_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -14952,7 +14229,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmax/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:14"
+  input: "random_shuffle_queue_DequeueMany:11"
   input: "dnn/input_from_feature_columns/input_layer/hmax/ExpandDims/dim"
   attr {
     key: "T"
@@ -15355,7 +14632,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmax_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:74"
+  input: "random_shuffle_queue_DequeueMany:66"
   input: "dnn/input_from_feature_columns/input_layer/hmax_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -15758,7 +15035,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmax_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:75"
+  input: "random_shuffle_queue_DequeueMany:67"
   input: "dnn/input_from_feature_columns/input_layer/hmax_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -16161,7 +15438,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmax_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:76"
+  input: "random_shuffle_queue_DequeueMany:68"
   input: "dnn/input_from_feature_columns/input_layer/hmax_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -16564,7 +15841,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmax_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:77"
+  input: "random_shuffle_queue_DequeueMany:69"
   input: "dnn/input_from_feature_columns/input_layer/hmax_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -16967,7 +16244,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmax_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:78"
+  input: "random_shuffle_queue_DequeueMany:70"
   input: "dnn/input_from_feature_columns/input_layer/hmax_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -17370,7 +16647,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmdy/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:13"
+  input: "random_shuffle_queue_DequeueMany:10"
   input: "dnn/input_from_feature_columns/input_layer/hmdy/ExpandDims/dim"
   attr {
     key: "T"
@@ -17773,7 +17050,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmdy_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:69"
+  input: "random_shuffle_queue_DequeueMany:61"
   input: "dnn/input_from_feature_columns/input_layer/hmdy_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -18176,7 +17453,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmdy_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:70"
+  input: "random_shuffle_queue_DequeueMany:62"
   input: "dnn/input_from_feature_columns/input_layer/hmdy_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -18579,7 +17856,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmdy_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:71"
+  input: "random_shuffle_queue_DequeueMany:63"
   input: "dnn/input_from_feature_columns/input_layer/hmdy_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -18982,7 +18259,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmdy_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:72"
+  input: "random_shuffle_queue_DequeueMany:64"
   input: "dnn/input_from_feature_columns/input_layer/hmdy_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -19385,7 +18662,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmdy_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:73"
+  input: "random_shuffle_queue_DequeueMany:65"
   input: "dnn/input_from_feature_columns/input_layer/hmdy_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -19788,7 +19065,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmin/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:15"
+  input: "random_shuffle_queue_DequeueMany:12"
   input: "dnn/input_from_feature_columns/input_layer/hmin/ExpandDims/dim"
   attr {
     key: "T"
@@ -20191,7 +19468,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmin_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:79"
+  input: "random_shuffle_queue_DequeueMany:71"
   input: "dnn/input_from_feature_columns/input_layer/hmin_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -20594,7 +19871,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmin_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:80"
+  input: "random_shuffle_queue_DequeueMany:72"
   input: "dnn/input_from_feature_columns/input_layer/hmin_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -20997,7 +20274,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmin_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:81"
+  input: "random_shuffle_queue_DequeueMany:73"
   input: "dnn/input_from_feature_columns/input_layer/hmin_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -21400,7 +20677,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmin_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:82"
+  input: "random_shuffle_queue_DequeueMany:74"
   input: "dnn/input_from_feature_columns/input_layer/hmin_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -21803,7 +21080,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/hmin_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:83"
+  input: "random_shuffle_queue_DequeueMany:75"
   input: "dnn/input_from_feature_columns/input_layer/hmin_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -22173,2827 +21450,6 @@ node {
   }
 }
 node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:2"
-  input: "dnn/input_from_feature_columns/input_layer/lat/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/lat/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/lat/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/lat/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/lat/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/lat/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/lat/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/lat/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lat/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/lat/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/lat/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:3"
-  input: "dnn/input_from_feature_columns/input_layer/lon/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/lon/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/lon/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/lon/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/lon/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/lon/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/lon/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/lon/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/lon/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/lon/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/lon/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:19"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_1/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:20"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_2/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:21"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_3/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:22"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_4/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/ExpandDims/dim"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: -1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/ExpandDims"
-  op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:23"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/ExpandDims/dim"
-  attr {
-    key: "T"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "Tdim"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/ToFloat"
-  op: "Cast"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/ExpandDims"
-  attr {
-    key: "DstT"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "SrcT"
-    value {
-      type: DT_DOUBLE
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/Shape"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 2
-          }
-        }
-        tensor_content: "\220\001\000\000\001\000\000\000"
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice/stack"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 0
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice/stack_1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice/stack_2"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-          dim {
-            size: 1
-          }
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice"
-  op: "StridedSlice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/Shape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice/stack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice/stack_1"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice/stack_2"
-  attr {
-    key: "Index"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "begin_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "ellipsis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "end_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "new_axis_mask"
-    value {
-      i: 0
-    }
-  }
-  attr {
-    key: "shrink_axis_mask"
-    value {
-      i: 1
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/Reshape/shape/1"
-  op: "Const"
-  input: "^add"
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-        }
-      }
-    }
-  }
-  attr {
-    key: "dtype"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "value"
-    value {
-      tensor {
-        dtype: DT_INT32
-        tensor_shape {
-        }
-        int_val: 1
-      }
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/Reshape/shape"
-  op: "Pack"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/strided_slice"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/Reshape/shape/1"
-  attr {
-    key: "N"
-    value {
-      i: 2
-    }
-  }
-  attr {
-    key: "T"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 2
-          }
-        }
-      }
-    }
-  }
-  attr {
-    key: "axis"
-    value {
-      i: 0
-    }
-  }
-}
-node {
-  name: "dnn/input_from_feature_columns/input_layer/prcp_5/Reshape"
-  op: "Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/ToFloat"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/Reshape/shape"
-  attr {
-    key: "T"
-    value {
-      type: DT_FLOAT
-    }
-  }
-  attr {
-    key: "Tshape"
-    value {
-      type: DT_INT32
-    }
-  }
-  attr {
-    key: "_output_shapes"
-    value {
-      list {
-        shape {
-          dim {
-            size: 400
-          }
-          dim {
-            size: 1
-          }
-        }
-      }
-    }
-  }
-}
-node {
   name: "dnn/input_from_feature_columns/input_layer/smax/ExpandDims/dim"
   op: "Const"
   input: "^add"
@@ -25027,7 +21483,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smax/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:5"
+  input: "random_shuffle_queue_DequeueMany:2"
   input: "dnn/input_from_feature_columns/input_layer/smax/ExpandDims/dim"
   attr {
     key: "T"
@@ -25430,7 +21886,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smax_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:29"
+  input: "random_shuffle_queue_DequeueMany:21"
   input: "dnn/input_from_feature_columns/input_layer/smax_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -25833,7 +22289,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smax_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:30"
+  input: "random_shuffle_queue_DequeueMany:22"
   input: "dnn/input_from_feature_columns/input_layer/smax_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -26236,7 +22692,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smax_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:31"
+  input: "random_shuffle_queue_DequeueMany:23"
   input: "dnn/input_from_feature_columns/input_layer/smax_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -26639,7 +23095,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smax_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:32"
+  input: "random_shuffle_queue_DequeueMany:24"
   input: "dnn/input_from_feature_columns/input_layer/smax_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -27042,7 +23498,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smax_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:33"
+  input: "random_shuffle_queue_DequeueMany:25"
   input: "dnn/input_from_feature_columns/input_layer/smax_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -27445,7 +23901,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smin/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:6"
+  input: "random_shuffle_queue_DequeueMany:3"
   input: "dnn/input_from_feature_columns/input_layer/smin/ExpandDims/dim"
   attr {
     key: "T"
@@ -27848,7 +24304,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smin_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:34"
+  input: "random_shuffle_queue_DequeueMany:26"
   input: "dnn/input_from_feature_columns/input_layer/smin_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -28251,7 +24707,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smin_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:35"
+  input: "random_shuffle_queue_DequeueMany:27"
   input: "dnn/input_from_feature_columns/input_layer/smin_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -28654,7 +25110,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smin_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:36"
+  input: "random_shuffle_queue_DequeueMany:28"
   input: "dnn/input_from_feature_columns/input_layer/smin_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -29057,7 +25513,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smin_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:37"
+  input: "random_shuffle_queue_DequeueMany:29"
   input: "dnn/input_from_feature_columns/input_layer/smin_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -29460,7 +25916,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/smin_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:38"
+  input: "random_shuffle_queue_DequeueMany:30"
   input: "dnn/input_from_feature_columns/input_layer/smin_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -29863,7 +26319,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/stp/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:4"
+  input: "random_shuffle_queue_DequeueMany:1"
   input: "dnn/input_from_feature_columns/input_layer/stp/ExpandDims/dim"
   attr {
     key: "T"
@@ -30266,7 +26722,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/stp_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:24"
+  input: "random_shuffle_queue_DequeueMany:16"
   input: "dnn/input_from_feature_columns/input_layer/stp_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -30669,7 +27125,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/stp_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:25"
+  input: "random_shuffle_queue_DequeueMany:17"
   input: "dnn/input_from_feature_columns/input_layer/stp_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -31072,7 +27528,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/stp_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:26"
+  input: "random_shuffle_queue_DequeueMany:18"
   input: "dnn/input_from_feature_columns/input_layer/stp_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -31475,7 +27931,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/stp_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:27"
+  input: "random_shuffle_queue_DequeueMany:19"
   input: "dnn/input_from_feature_columns/input_layer/stp_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -31878,7 +28334,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/stp_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:28"
+  input: "random_shuffle_queue_DequeueMany:20"
   input: "dnn/input_from_feature_columns/input_layer/stp_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -32281,7 +28737,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/temp/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:7"
+  input: "random_shuffle_queue_DequeueMany:4"
   input: "dnn/input_from_feature_columns/input_layer/temp/ExpandDims/dim"
   attr {
     key: "T"
@@ -32684,7 +29140,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/temp_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:39"
+  input: "random_shuffle_queue_DequeueMany:31"
   input: "dnn/input_from_feature_columns/input_layer/temp_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -33087,7 +29543,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/temp_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:40"
+  input: "random_shuffle_queue_DequeueMany:32"
   input: "dnn/input_from_feature_columns/input_layer/temp_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -33490,7 +29946,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/temp_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:41"
+  input: "random_shuffle_queue_DequeueMany:33"
   input: "dnn/input_from_feature_columns/input_layer/temp_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -33893,7 +30349,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/temp_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:42"
+  input: "random_shuffle_queue_DequeueMany:34"
   input: "dnn/input_from_feature_columns/input_layer/temp_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -34296,7 +30752,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/temp_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:43"
+  input: "random_shuffle_queue_DequeueMany:35"
   input: "dnn/input_from_feature_columns/input_layer/temp_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -34699,7 +31155,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmax/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:8"
+  input: "random_shuffle_queue_DequeueMany:5"
   input: "dnn/input_from_feature_columns/input_layer/tmax/ExpandDims/dim"
   attr {
     key: "T"
@@ -35102,7 +31558,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmax_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:44"
+  input: "random_shuffle_queue_DequeueMany:36"
   input: "dnn/input_from_feature_columns/input_layer/tmax_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -35505,7 +31961,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmax_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:45"
+  input: "random_shuffle_queue_DequeueMany:37"
   input: "dnn/input_from_feature_columns/input_layer/tmax_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -35908,7 +32364,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmax_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:46"
+  input: "random_shuffle_queue_DequeueMany:38"
   input: "dnn/input_from_feature_columns/input_layer/tmax_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -36311,7 +32767,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmax_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:47"
+  input: "random_shuffle_queue_DequeueMany:39"
   input: "dnn/input_from_feature_columns/input_layer/tmax_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -36714,7 +33170,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmax_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:48"
+  input: "random_shuffle_queue_DequeueMany:40"
   input: "dnn/input_from_feature_columns/input_layer/tmax_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -37117,7 +33573,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmin/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:9"
+  input: "random_shuffle_queue_DequeueMany:6"
   input: "dnn/input_from_feature_columns/input_layer/tmin/ExpandDims/dim"
   attr {
     key: "T"
@@ -37520,7 +33976,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmin_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:49"
+  input: "random_shuffle_queue_DequeueMany:41"
   input: "dnn/input_from_feature_columns/input_layer/tmin_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -37923,7 +34379,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmin_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:50"
+  input: "random_shuffle_queue_DequeueMany:42"
   input: "dnn/input_from_feature_columns/input_layer/tmin_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -38326,7 +34782,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmin_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:51"
+  input: "random_shuffle_queue_DequeueMany:43"
   input: "dnn/input_from_feature_columns/input_layer/tmin_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -38729,7 +35185,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmin_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:52"
+  input: "random_shuffle_queue_DequeueMany:44"
   input: "dnn/input_from_feature_columns/input_layer/tmin_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -39132,7 +35588,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/tmin_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:53"
+  input: "random_shuffle_queue_DequeueMany:45"
   input: "dnn/input_from_feature_columns/input_layer/tmin_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -39535,7 +35991,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdct/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:17"
+  input: "random_shuffle_queue_DequeueMany:14"
   input: "dnn/input_from_feature_columns/input_layer/wdct/ExpandDims/dim"
   attr {
     key: "T"
@@ -39938,7 +36394,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdct_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:89"
+  input: "random_shuffle_queue_DequeueMany:81"
   input: "dnn/input_from_feature_columns/input_layer/wdct_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -40341,7 +36797,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdct_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:90"
+  input: "random_shuffle_queue_DequeueMany:82"
   input: "dnn/input_from_feature_columns/input_layer/wdct_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -40744,7 +37200,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdct_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:91"
+  input: "random_shuffle_queue_DequeueMany:83"
   input: "dnn/input_from_feature_columns/input_layer/wdct_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -41147,7 +37603,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdct_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:92"
+  input: "random_shuffle_queue_DequeueMany:84"
   input: "dnn/input_from_feature_columns/input_layer/wdct_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -41550,7 +38006,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdct_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:93"
+  input: "random_shuffle_queue_DequeueMany:85"
   input: "dnn/input_from_feature_columns/input_layer/wdct_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -41953,7 +38409,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdsp/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:16"
+  input: "random_shuffle_queue_DequeueMany:13"
   input: "dnn/input_from_feature_columns/input_layer/wdsp/ExpandDims/dim"
   attr {
     key: "T"
@@ -42356,7 +38812,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdsp_1/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:84"
+  input: "random_shuffle_queue_DequeueMany:76"
   input: "dnn/input_from_feature_columns/input_layer/wdsp_1/ExpandDims/dim"
   attr {
     key: "T"
@@ -42759,7 +39215,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdsp_2/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:85"
+  input: "random_shuffle_queue_DequeueMany:77"
   input: "dnn/input_from_feature_columns/input_layer/wdsp_2/ExpandDims/dim"
   attr {
     key: "T"
@@ -43162,7 +39618,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdsp_3/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:86"
+  input: "random_shuffle_queue_DequeueMany:78"
   input: "dnn/input_from_feature_columns/input_layer/wdsp_3/ExpandDims/dim"
   attr {
     key: "T"
@@ -43565,7 +40021,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdsp_4/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:87"
+  input: "random_shuffle_queue_DequeueMany:79"
   input: "dnn/input_from_feature_columns/input_layer/wdsp_4/ExpandDims/dim"
   attr {
     key: "T"
@@ -43968,7 +40424,7 @@ node {
 node {
   name: "dnn/input_from_feature_columns/input_layer/wdsp_5/ExpandDims"
   op: "ExpandDims"
-  input: "random_shuffle_queue_DequeueMany:88"
+  input: "random_shuffle_queue_DequeueMany:80"
   input: "dnn/input_from_feature_columns/input_layer/wdsp_5/ExpandDims/dim"
   attr {
     key: "T"
@@ -44389,7 +40845,6 @@ node {
   input: "dnn/input_from_feature_columns/input_layer/dmin_3/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/dmin_4/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/dmin_5/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/elvt/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/gust/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/gust_1/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/gust_2/Reshape"
@@ -44414,13 +40869,6 @@ node {
   input: "dnn/input_from_feature_columns/input_layer/hmin_3/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/hmin_4/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/hmin_5/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/lat/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/lon/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_1/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_2/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_3/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_4/Reshape"
-  input: "dnn/input_from_feature_columns/input_layer/prcp_5/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/smax/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/smax_1/Reshape"
   input: "dnn/input_from_feature_columns/input_layer/smax_2/Reshape"
@@ -44473,7 +40921,7 @@ node {
   attr {
     key: "N"
     value {
-      i: 98
+      i: 90
     }
   }
   attr {
@@ -44497,7 +40945,7 @@ node {
             size: 400
           }
           dim {
-            size: 98
+            size: 90
           }
         }
       }
@@ -44543,7 +40991,7 @@ node {
             size: 2
           }
         }
-        tensor_content: "b\000\000\000\305\000\000\000"
+        tensor_content: "Z\000\000\000\265\000\000\000"
       }
     }
   }
@@ -44581,7 +41029,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: -0.142614811659
+        float_val: -0.148795902729
       }
     }
   }
@@ -44619,7 +41067,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.142614811659
+        float_val: 0.148795902729
       }
     }
   }
@@ -44648,10 +41096,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44730,10 +41178,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44765,10 +41213,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44792,10 +41240,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44818,10 +41266,10 @@ node {
     value {
       shape {
         dim {
-          size: 98
+          size: 90
         }
         dim {
-          size: 197
+          size: 181
         }
       }
     }
@@ -44858,10 +41306,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44904,10 +41352,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44931,7 +41379,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44950,7 +41398,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 197
+            size: 181
           }
         }
         float_val: 0.0
@@ -44975,7 +41423,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -44998,7 +41446,7 @@ node {
     value {
       shape {
         dim {
-          size: 197
+          size: 181
         }
       }
     }
@@ -45035,7 +41483,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45078,7 +41526,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45101,10 +41549,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45131,7 +41579,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45166,7 +41614,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45193,7 +41641,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45225,7 +41673,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45283,7 +41731,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45315,7 +41763,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -45535,7 +41983,7 @@ node {
             size: 2
           }
         }
-        tensor_content: "\305\000\000\000\001\000\000\000"
+        tensor_content: "\265\000\000\000\001\000\000\000"
       }
     }
   }
@@ -45573,7 +42021,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: -0.174077659845
+        float_val: -0.181568264961
       }
     }
   }
@@ -45611,7 +42059,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
         }
-        float_val: 0.174077659845
+        float_val: 0.181568264961
       }
     }
   }
@@ -45640,7 +42088,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -45722,7 +42170,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -45757,7 +42205,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -45784,7 +42232,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -45810,7 +42258,7 @@ node {
     value {
       shape {
         dim {
-          size: 197
+          size: 181
         }
         dim {
           size: 1
@@ -45850,7 +42298,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -45896,7 +42344,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -46093,7 +42541,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -46879,7 +43327,7 @@ node {
 node {
   name: "dnn/head/ToFloat"
   op: "Cast"
-  input: "random_shuffle_queue_DequeueMany:99"
+  input: "random_shuffle_queue_DequeueMany:91"
   input: "^add"
   attr {
     key: "DstT"
@@ -50707,7 +47155,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -50743,7 +47191,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -50800,7 +47248,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -50832,7 +47280,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -50862,7 +47310,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -50885,7 +47333,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -50933,7 +47381,7 @@ node {
             size: 400
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -50965,7 +47413,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -50992,7 +47440,7 @@ node {
             size: 400
           }
           dim {
-            size: 98
+            size: 90
           }
         }
       }
@@ -51028,10 +47476,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51085,7 +47533,7 @@ node {
             size: 400
           }
           dim {
-            size: 98
+            size: 90
           }
         }
       }
@@ -51117,10 +47565,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51144,10 +47592,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51166,10 +47614,10 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
         float_val: 0.10000000149
@@ -51194,10 +47642,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51220,10 +47668,10 @@ node {
     value {
       shape {
         dim {
-          size: 98
+          size: 90
         }
         dim {
-          size: 197
+          size: 181
         }
       }
     }
@@ -51260,10 +47708,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51306,10 +47754,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51333,7 +47781,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51352,7 +47800,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 197
+            size: 181
           }
         }
         float_val: 0.10000000149
@@ -51377,7 +47825,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51400,7 +47848,7 @@ node {
     value {
       shape {
         dim {
-          size: 197
+          size: 181
         }
       }
     }
@@ -51437,7 +47885,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51480,7 +47928,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51504,7 +47952,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -51526,7 +47974,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -51554,7 +48002,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -51580,7 +48028,7 @@ node {
     value {
       shape {
         dim {
-          size: 197
+          size: 181
         }
         dim {
           size: 1
@@ -51620,7 +48068,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -51666,7 +48114,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -51905,10 +48353,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51948,7 +48396,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -51988,7 +48436,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -54637,7 +51085,7 @@ node {
         dtype: DT_STRING
         tensor_shape {
         }
-        string_val: "_temp_be72afbfd86a48e297a426c78a106340/part"
+        string_val: "_temp_97af6533ac1e404fb3a670a6b0e08625/part"
       }
     }
   }
@@ -54820,14 +51268,14 @@ node {
             size: 9
           }
         }
-        string_val: "197 0,197"
-        string_val: "197 0,197"
-        string_val: "98 197 0,98:0,197"
-        string_val: "98 197 0,98:0,197"
+        string_val: "181 0,181"
+        string_val: "181 0,181"
+        string_val: "90 181 0,90:0,181"
+        string_val: "90 181 0,90:0,181"
         string_val: "1 0,1"
         string_val: "1 0,1"
-        string_val: "197 1 0,197:0,1"
-        string_val: "197 1 0,197:0,1"
+        string_val: "181 1 0,181:0,1"
+        string_val: "181 1 0,181:0,1"
         string_val: ""
       }
     }
@@ -55031,7 +51479,7 @@ node {
             size: 1
           }
         }
-        string_val: "197 0,197"
+        string_val: "181 0,181"
       }
     }
   }
@@ -55048,7 +51496,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55088,7 +51536,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55174,7 +51622,7 @@ node {
             size: 1
           }
         }
-        string_val: "197 0,197"
+        string_val: "181 0,181"
       }
     }
   }
@@ -55191,7 +51639,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55231,7 +51679,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55317,7 +51765,7 @@ node {
             size: 1
           }
         }
-        string_val: "98 197 0,98:0,197"
+        string_val: "90 181 0,90:0,181"
       }
     }
   }
@@ -55334,10 +51782,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55377,10 +51825,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55466,7 +51914,7 @@ node {
             size: 1
           }
         }
-        string_val: "98 197 0,98:0,197"
+        string_val: "90 181 0,90:0,181"
       }
     }
   }
@@ -55483,10 +51931,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55526,10 +51974,10 @@ node {
       list {
         shape {
           dim {
-            size: 98
+            size: 90
           }
           dim {
-            size: 197
+            size: 181
           }
         }
       }
@@ -55901,7 +52349,7 @@ node {
             size: 1
           }
         }
-        string_val: "197 1 0,197:0,1"
+        string_val: "181 1 0,181:0,1"
       }
     }
   }
@@ -55918,7 +52366,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -55961,7 +52409,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -56050,7 +52498,7 @@ node {
             size: 1
           }
         }
-        string_val: "197 1 0,197:0,1"
+        string_val: "181 1 0,181:0,1"
       }
     }
   }
@@ -56067,7 +52515,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
@@ -56110,7 +52558,7 @@ node {
       list {
         shape {
           dim {
-            size: 197
+            size: 181
           }
           dim {
             size: 1
